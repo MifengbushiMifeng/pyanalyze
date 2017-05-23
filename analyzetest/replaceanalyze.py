@@ -44,12 +44,12 @@ orignal_str = 'I would like to test the replace func.'
 # _time_analyze(slow_replace, orignal_str, exec_times)
 # _time_analyze(fast_replace, orignal_str, exec_times)
 # _time_analyze(faster_replace, orignal_str, exec_times)
-def _timeit_analyze_(func):
-    t1 = Timer("%s('%s')" % (func.__name__, orignal_str), 'from __main__ import %s' % func.__name__)
-    print('{:<20}{:10.6} s'.format(func.__name__ + ':', t1.timeit(exec_times)))
+# def _timeit_analyze_(func):
+#     t1 = Timer("%s('%s')" % (func.__name__, orignal_str), 'from __main__ import %s' % func.__name__)
+#     print('{:<20}{:10.6} s'.format(func.__name__ + ':', t1.timeit(exec_times)))
 
 
-_timeit_analyze_(slowest_replace)
-_timeit_analyze_(slow_replace)
-_timeit_analyze_(fast_replace)
-_timeit_analyze_(faster_replace)
+# _timeit_analyze_(slowest_replace)
+# _timeit_analyze_(slow_replace)
+# _timeit_analyze_(fast_replace)
+# _timeit_analyze_(faster_replace)
