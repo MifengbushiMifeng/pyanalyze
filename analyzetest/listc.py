@@ -9,3 +9,12 @@ print(new_gen)
 
 for item in new_gen:
     print(item)
+
+n = 16
+myDict = {}
+for i in range(0, n):
+    char = 'abcd'[i%4]
+    if char not in myDict:
+        myDict[char] = 0
+        myDict[char] += 1
+        print(myDict)
