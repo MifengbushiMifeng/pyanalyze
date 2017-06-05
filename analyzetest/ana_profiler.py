@@ -62,9 +62,9 @@ class Memoized(object):
             return self.results[key]
 
 
-# @do_cprofile('./f.prof')
-@Memoized
-def f(self, n):
+@do_cprofile('./ff.prof')
+# @Memoized
+def f(n):
     if n < 2:
         return n
     return f(n - 2) + f(n - 1)
